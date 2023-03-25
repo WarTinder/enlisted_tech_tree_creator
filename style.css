@@ -6,10 +6,10 @@
 */
 
 :root {
-	--main_bg: rgb(24, 35, 49);
+	--main_bg: #091b29;
 	--text_col: white;
 
-	--tech_tree_bg: rgb(24, 35, 49);
+	--tech_tree_bg: #091b29;
 }
 
 html,
@@ -152,13 +152,13 @@ body {
 .type_researchable,
 .type_reserve,
 .type_event {
-	background-image: url("https://i.imgur.com/05C2lCi.png");
+	background-image: url("images/vehicle_badge_standard.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 .type_premium {
-	background-image: url("https://i.imgur.com/VfFrfDu.png");
+	background-image: url("images/vehicle_badge_premium.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -174,7 +174,7 @@ body {
 }
 
 .badgeLine {
-	height: 20px;
+	height: 30px;
 	padding: 0px;
 }
 
@@ -265,9 +265,9 @@ a {
 }
 
 .rank {
-	border-left: 1px solid rgb(48, 59, 71);
-	border-right: 1px solid rgb(48, 59, 71);
-	border-bottom: 1px solid rgb(48, 59, 71);
+	border-left: 1px solid #091b29;
+	border-right: 1px solid #091b29;
+	border-bottom: 1px solid #091b29;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -277,7 +277,7 @@ a {
 }
 
 .rank:first-of-type {
-	border-top: 1px solid rgb(48, 59, 71);
+	border-top: 1px solid #091b29;
 }
 
 .branch {
@@ -293,8 +293,8 @@ a {
 	text-shadow: 0px 0px 11px #000000;
 	max-width: 140px;
 	position: absolute;
-	top: 0px;
-	left: 4px;
+	top: -22px;
+	left: 0px;
 }
 
 .faithful .vehicleName {
@@ -307,8 +307,8 @@ a {
 	z-index: 1;
 	text-shadow: 0px 0px 11px #000000;
 	position: absolute;
-	bottom: 1px;
-	right: 2px;
+	bottom: 23px;
+	right: 5px;
 }
 
 .faithful .vehicleBr {
@@ -342,8 +342,8 @@ a {
 }
 
 .vehicleBadge {
-	width: 150px;
-	height: 50px;
+	width: 219px;
+	height: 72px;
 }
 
 .vehicleBadge svg {
@@ -405,32 +405,34 @@ nav div:hover {
 	transition-duration: 0.4s;
 }
 
-.lineArrow {
+/* .lineArrow {
 	width: 0px;
 	height: 0px;
 	border-left: 8.5px solid transparent;
 	border-right: 8.5px solid transparent;
 	border-top: 8px solid rgb(98, 129, 130);
 	margin: auto;
-}
+} */
 
 .lineDiv {
-	width: 9px;
-	background-color: rgb(98, 129, 130);
+	width: 5px;
+	background-color: #425b31;
 	height: 100%;
-	padding-bottom: 11.4px;
+	padding-bottom: 31px;
+	padding-top: 31px;
 	margin: 8px auto auto auto;
+	align-items: center;
 }
 
 .rankNumber {
-	border-right: 1px solid rgb(48, 59, 71);
-	display: -webkit-box;
+	border-right: 1px solid #091b29;
+	/* display: hidden;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	min-width: 1.2rem;
+	min-width: 1.2rem; */
 }
 
 .rankNumberText {

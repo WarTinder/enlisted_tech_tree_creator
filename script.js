@@ -895,14 +895,14 @@
 			const rankNumDivText = document.createElement( 'div' );
 			rankNumDivText.innerHTML = `Rank <b>${ romanize( rank ) }</b>`;
 			rankNumDivText.classList.add( 'rankNumberText' );
-			rankNumDiv.appendChild( rankNumDivText );
-			rankDiv.appendChild( rankNumDiv );
+			// rankNumDiv.appendChild( rankNumDivText );
+			// rankDiv.appendChild( rankNumDiv );
 			for ( const branch of branches ) {
 				const branchDiv = document.createElement( 'div' );
 				branchDiv.classList.add( 'branch' );
 				if ( branch.indexOf( 'premium' ) !== -1 && firstPremiumBranch ) {
 					firstPremiumBranch = false;
-					branchDiv.style.borderLeft = '1px solid rgb(48, 59, 71)';
+					branchDiv.style.borderLeft = '0px solid rgb(48, 59, 71)';
 				}
 				const region = `rank_${ rank }_branch_${ branch }`;
 				if ( organizedVehicles[ region ] !== undefined ) {
@@ -1142,8 +1142,8 @@
 			svg = createSvg( classIcons.find( classIcon => classIcon.id === vehicle.classIcon ) );
 		}
 		let brLabel = '';
-		if ( vehicle.type === 'reserve' ) brLabel = `<i>Reserve</i> (${ vehicle.br.toFixed( 1 ) })`;
-		else brLabel = vehicle.br.toFixed( 1 );
+		if ( vehicle.type === 'reserve' ) brLabel = `Reserve`;
+		// else brLabel = vehicle.br.toFixed( 1 );
 		let branchLine = '';
 		if ( [ 'researchable', 'reserve' ].includes( vehicle.type ) ) branchLine = `badgeLine_${ vehicle.branch }`;
 		else branchLine = `badgeLine_premium_${ vehicle.branch }`;
